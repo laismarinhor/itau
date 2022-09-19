@@ -1,0 +1,15 @@
+<ng-content *ngIf="sucesso"></ng-content>
+<div class="aviso" *ngIf="!sucesso">
+    <span>Não foi possível carregar a carteira.</span>
+</div>
+<div class="row cards-carteira" *ngFor="let item of carteira">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ item.descricao }}</h5>
+            <div class="details">
+                <span>{{ item.valor | currency : 'R$'  }}</span>
+                <span [ngClass]="item.tipo === 'Débito' ? 'debito' : 'credito'">{{ item.tipo  }}</span>
+            </div>
+        </div>
+    </div>
+</div>

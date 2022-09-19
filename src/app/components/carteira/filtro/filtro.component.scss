@@ -1,0 +1,87 @@
+.card{
+    margin: 1rem 5rem;
+    border: 0;
+
+    .card-body{
+        color: #4e4e4e;
+
+        .input-group{
+            font-size: 12px;
+            height: 30px;
+            width: auto;
+            max-width: 20rem;
+            float: right;
+
+            span{
+                font-size: 12px;
+            }
+        }
+
+        input{
+            font-size: 12px;
+        }
+
+        .card-title{
+            text-align: center;
+            font-size: 15px;
+
+        }
+    
+        select{
+            font-size: 12px;
+        }
+
+        .btn-responsive{
+            display: none;
+        }
+
+        .btns{
+            text-align: center;
+
+            .btn-search{
+                font-size: 13px;
+                background-color: #ec7000;
+                border: none;
+            }
+            .btn-clear{
+                font-size: 12px;
+                border: 1px solid #c0c0c0;
+                margin-left: 10px;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 992px){
+    .card{
+        margin: 1rem 0;
+
+        .btn{
+            display: none;
+        }
+
+        .btns .btn-responsive{
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .card{
+        margin: 1rem 0;
+        text-align: -webkit-center;
+
+        .card-body{
+            .input-group{
+                float: none;
+                margin-bottom: 1rem;
+            }
+
+            select{
+                max-width: 20rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

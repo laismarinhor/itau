@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-body container">
+      <h5 class="card-title">Pesquisa Carteira</h5>
+      <div class="row search">
+        <div class="col-md-5 col-sm">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">Descrição</span>
+            <input type="text" class="form-control" id="descricao" [(ngModel)]="descricao">
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm">
+          <select class="form-select" aria-label="Selecione o tipo" [(ngModel)]="selected">
+              <option selected disabled value="-1">Tipo</option>
+              <option value="0">Crédito</option>
+              <option value="1">Débito</option>
+            </select>
+        </div>
+
+        <div class="col-md-4 col-sm btns">
+          <button type="button" class="btn btn-primary btn-search" (click)="pesquisa()">Pesquisar</button>
+          <button type="button" class="btn btn-secundary btn-clear" (click)="clear()">Limpar</button>
+          <button type="button" class="btn btn-primary btn-search btn-responsive" (click)="pesquisa()"><i class="fa fa-search"></i></button>
+          <button type="button" class="btn btn-secundary btn-clear btn-responsive" (click)="clear()"><i class="fa fa-trash"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>

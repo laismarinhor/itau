@@ -1,0 +1,42 @@
+.cards-carteira{
+    margin: 0 10rem;
+
+    .card{
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-radius: 0px;
+
+        .details{
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between;
+
+            .debito{
+                color: #ff0000;
+            }
+
+            .credito{
+                color: #04b304;
+            }
+        }
+    }
+}
+
+.aviso{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 992px){
+    .cards-carteira{
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 575px){
+    .cards-carteira{
+        margin: 0 2rem;
+    }
+}

@@ -1,0 +1,63 @@
+{
+  "carteira": [
+    {
+      "id": 1,
+      "descricao": "Conta de luz",
+      "valor": 180.5,
+      "tipo": "Débito",
+      "status": "Recebido"
+    },
+    {
+      "id": 2,
+      "descricao": "Conta de água",
+      "valor": 80.5,
+      "tipo": "Débito",
+      "status": "Recebido"
+    },
+    {
+      "id": 3,
+      "descricao": "Salário",
+      "valor": 2000,
+      "tipo": "Crédito",
+      "status": "Pago"
+    },
+    {
+      "id": 4,
+      "descricao": "Comissão",
+      "valor": 200.8,
+      "tipo": "Crédito",
+      "status": "Pago"
+    },
+    {
+      "id": 5,
+      "descricao": "Internet",
+      "valor": 50,
+      "tipo": "Débito",
+      "status": "Recebido"
+    },
+    {
+      "id": 6,
+      "descricao": "Lanchonete",
+      "valor": 80.5,
+      "tipo": "Débito",
+      "status": "Recebido"
+    },
+    {
+      "id": 6,
+      "descricao": "Shopping",
+      "valor": 180.5,
+      "tipo": "Débito",
+      "status": "Recebido"
+    }
+  ],
+  "status": [
+    {
+      "id": 0,
+      "nome": "pago"
+    },
+    {
+      "id": 1,
+      "nome": "recebido"
+    }
+  ]
+}
